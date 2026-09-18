@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Menu | Brew & Bean</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        ☕ Brew & Bean
+    </a>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="menu.html">Menu</a>
+
+        <a href="cart.html">
+            🛒 Cart
+            <span id="cartCount">0</span>
+        </a>
+
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="page-header">
+
+        <p class="subtitle">BREW & BEAN</p>
+
+        <h1>Our Menu</h1>
+
+        <p>
+            Choose your favourite drink and enjoy every sip.
+        </p>
+
+    </section>
+
+
+    <section class="menu-section">
+
+        <div class="menu-controls">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search coffee..."
+            >
+
+            <select id="categoryFilter">
+
+                <option value="all">All Categories</option>
+
+                <option value="coffee">Coffee</option>
+
+                <option value="drinks">Drinks</option>
+
+                <option value="dessert">Dessert</option>
+
+            </select>
+
+        </div>
+
+
+        <div id="loading" class="loading">
+            Loading menu...
+        </div>
+
+
+        <div id="error" class="error"></div>
+
+
+        <div id="productContainer" class="product-grid"></div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>© 2026 Brew & Bean. All rights reserved.</p>
+
+</footer>
+
+
+<script src="js/api.js"></script>
+<script src="js/common.js"></script>
+<script src="js/menu.js"></script>
+
+</body>
+</html>
+

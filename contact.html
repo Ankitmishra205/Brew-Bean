@@ -1,0 +1,169 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Brew & Bean</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        ☕ Brew & Bean
+    </a>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="menu.html">Menu</a>
+
+        <a href="cart.html">
+            🛒 Cart
+            <span id="cartCount">0</span>
+        </a>
+
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="page-header">
+
+        <p class="subtitle">GET IN TOUCH</p>
+
+        <h1>Contact Us</h1>
+
+        <p>
+            We'd love to hear from you.
+        </p>
+
+    </section>
+
+
+    <section class="contact-section">
+
+        <div class="contact-info">
+
+            <h2>Visit Our Cafe ☕</h2>
+
+            <p>
+                📍 123 Coffee Street, Delhi, India
+            </p>
+
+            <p>
+                📞 +91 98765 43210
+            </p>
+
+            <p>
+                📧 hello@brewandbean.com
+            </p>
+
+            <h3>Opening Hours</h3>
+
+            <p>
+                Monday - Sunday<br>
+                8:00 AM - 10:00 PM
+            </p>
+
+        </div>
+
+
+        <form id="contactForm"
+              class="contact-form">
+
+            <label>
+                Name
+
+                <input
+                    type="text"
+                    id="contactName"
+                    required
+                >
+
+            </label>
+
+
+            <label>
+                Email
+
+                <input
+                    type="email"
+                    id="contactEmail"
+                    required
+                >
+
+            </label>
+
+
+            <label>
+                Message
+
+                <textarea
+                    id="contactMessage"
+                    rows="6"
+                    required>
+                </textarea>
+
+            </label>
+
+
+            <button
+                type="submit"
+                class="btn">
+
+                Send Message
+
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>© 2026 Brew & Bean. All rights reserved.</p>
+
+</footer>
+
+
+<script src="js/common.js"></script>
+
+<script>
+
+const contactForm = document.getElementById("contactForm");
+
+contactForm.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    alert("Thank you! Your message has been received.");
+
+    contactForm.reset();
+
+});
+
+</script>
+
+</body>
+</html>
+```
